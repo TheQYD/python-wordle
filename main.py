@@ -2,8 +2,6 @@
 
 import random
 
-guesses = 0
-max_guesses = 6
 
 #TODO: Fix "guesses referenced before assignment" bug.
 
@@ -28,6 +26,9 @@ def startGame():
     checkWord(guessed_word, chosen_word)
 
 if __name__ == '__main__':
+  guesses = 0
+  max_guesses = 6
+
   chosen_word = str(randomizeWord())
   startGame()
 
